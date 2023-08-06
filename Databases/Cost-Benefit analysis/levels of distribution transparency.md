@@ -1,0 +1,11 @@
+Distribution transparency refers to the degree to which the distribution of resources (e.g., data, computation, services) in a distributed computing system is hidden from users and applications. The goal of distribution transparency is to make the distributed system appear as if it were a single, unified system to users and applications, regardless of its underlying complexities.
+
+There are different levels of distribution transparency, and each level provides varying degrees of abstraction and isolation from the distribution aspects. The three main levels of distribution transparency are:
+
+1. **Access Transparency**: At this level, users and applications are unaware that they are accessing resources that are distributed across multiple nodes. They can interact with the system as if all resources were local, and the system handles the complexities of locating and accessing the distributed resources. For example, when accessing a file on a network file system, the user doesn't need to know the physical location of the file or the communication protocol used to access it; they simply use it as if it were a local file.
+
+2. **Location Transparency**: Location transparency means that users and applications are unaware of the physical location of the resources they are using. The system abstracts the location details, and users can access resources using their logical names or identifiers, without needing to know the specific physical addresses. For example, in a distributed database, users can query data using the table and column names without knowing which server or node actually holds the data.
+
+3. **Migration Transparency**: Migration transparency ensures that users and applications are unaffected by the movement of resources within the distributed system. Resources can be moved from one location to another (e.g., data migration, process migration) without interrupting ongoing operations or requiring changes to user code. This level of transparency is essential for maintaining system availability and load balancing.
+
+Achieving complete transparency at all levels can be challenging in distributed systems, and often trade-offs are made depending on the specific requirements and design of the system. Striking the right balance between transparency and system complexity is an important consideration in distributed system design.
