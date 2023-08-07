@@ -32,5 +32,5 @@ Licenses for many RDBMSs are pretty expensive, while many NoSQL databases are op
 NoSQL doesn’t follow any specific standard, like how relational databases follow relational algebra. Porting applications from one type of NoSQL database to another might be a challenge.
 
 #### Consistency
-
+Non-relational/ NoSQL databases follow #Eventually_consistent  
 NoSQL databases provide different products based on the specific trade-offs between consistency and availability when failures can happen. We won’t have strong data integrity, like primary and referential integrities in a relational database. Data might not be strongly consistent but slowly converging using a weak model like eventual consistency.
