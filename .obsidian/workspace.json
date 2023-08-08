@@ -16,13 +16,19 @@
                 {
                   "state": "{}",
                   "eState": "{}"
+                },
+                {
+                  "title": "DNS Hierarchy",
+                  "icon": "lucide-file",
+                  "state": "{\"type\":\"markdown\",\"state\":{\"file\":\"Building Blocks of a System/DNS Hierarchy.md\",\"mode\":\"source\",\"backlinks\":false,\"source\":false}}",
+                  "eState": "{\"cursor\":{\"from\":{\"line\":15,\"ch\":0},\"to\":{\"line\":15,\"ch\":0}},\"scroll\":13.057126320711346}"
                 }
               ]
             },
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Building Blocks of a System/DNS Hierarchy.md",
+                "file": "Building Blocks of a System/DNS.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -148,7 +154,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Building Blocks of a System/DNS Hierarchy.md",
+                "file": "Building Blocks of a System/DNS.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -198,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Building Blocks of a System/DNS Hierarchy.md"
+                "file": "Building Blocks of a System/DNS.md"
               }
             }
           },
@@ -217,7 +223,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Building Blocks of a System/DNS Hierarchy.md",
+                "file": "Building Blocks of a System/DNS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -243,7 +249,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Building Blocks of a System/DNS Hierarchy.md",
+                "file": "Building Blocks of a System/DNS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -288,8 +294,13 @@
   },
   "active": "62f7b1a6c18b0361",
   "lastOpenFiles": [
-    "Building Blocks of a System/DNS.md",
     "Building Blocks of a System/DNS Hierarchy.md",
+    "Building Blocks of a System/DNS Caching.md",
+    "Untitled.canvas",
+    "Building Blocks of a System/DNS.md",
+    "Building Blocks of a System/Images/Pasted image 20230807234431.png",
+    "Building Blocks of a System/Images",
+    "Building Blocks of a System/Images/Pasted image 20230807234315.png",
     "Concepts/Non-functional System Characteristics.md",
     "Concepts/Maintainability.md",
     "Concepts/Availability.md",
@@ -311,8 +322,6 @@
     "Concepts/Images/Pasted image 20230807164744.png",
     "Concepts/Abstractions.md",
     "Concepts/Images/Pasted image 20230807164705.png",
-    "Concepts/Images/Pasted image 20230807162127.png",
-    "Concepts/Images/Pasted image 20230807151856.png",
     "Databases/Types of Databases/Non-Relational DB/Non-Relational Databases.md",
     "Communication",
     "Communication/Remote Procedure Calls.md",
@@ -328,11 +337,8 @@
     "New Text Document.txt",
     "Key-Value Store/Ensure Scalability and Replication.md",
     "Key-Value Store/Images",
-    "Databases/Data Replication/Replication Models/Single Leader/Single leader or primary-secondary replication.md",
-    "Databases/Data Partitioning/Sharding/Horizontal Sharding/Types of Sharding/Consistent Hashing.md",
     "Key-Value Store",
     "Databases",
-    "Databases/Cost-Benefit analysis",
-    "Databases/Data Partitioning/Sharding/Horizontal Sharding/Types of Sharding"
+    "Databases/Cost-Benefit analysis"
   ]
 }
