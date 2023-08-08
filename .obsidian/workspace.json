@@ -22,6 +22,15 @@
           {
             "id": "dda0cd8cdd0b430f",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "markdown",
               "state": {
@@ -81,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240.5,
-    "collapsed": true
+    "width": 255.50800323486328
   },
   "right": {
     "id": "b6409780c9317c09",
@@ -93,12 +101,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d7dcd1504fa42b6f",
+            "id": "5158ef64aa251855",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Versioning Data and Achieving Configurability.md",
+                "file": "Building Blocks of a System/DNS Hierarchy.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -121,7 +138,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6554983534946917,
+                  "scale": 0.6465615665031307,
                   "close": true
                 }
               }
@@ -130,16 +147,25 @@
         ]
       },
       {
-        "id": "38d6e2536a370265",
+        "id": "75c58b1b9f7ce300",
         "type": "tabs",
         "children": [
           {
             "id": "aa54ff6fee9ca1dd",
             "type": "leaf",
+            "pane-relief:history-v1": {
+              "pos": 0,
+              "stack": [
+                {
+                  "state": "{}",
+                  "eState": "{}"
+                }
+              ]
+            },
             "state": {
               "type": "outline",
               "state": {
-                "file": "Versioning Data and Achieving Configurability.md"
+                "file": "Building Blocks of a System/DNS Hierarchy.md"
               }
             }
           },
@@ -190,6 +216,7 @@
     "direction": "horizontal",
     "width": 326.5,
     "collapsed": true
+    "width": 358.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -202,52 +229,53 @@
     }
   },
   "active": "6f9fa340d5d4ad5c",
+  "active": "62f7b1a6c18b0361",
   "lastOpenFiles": [
+    "file storage.md",
+    "Overview ( Start Here ).md",
+    "Concepts/Images/Pasted image 20230807193423.png",
+    "Concepts/Images/Pasted image 20230807191246.png",
+    "Concepts/Images/Pasted image 20230807171418.png",
+    "Concepts/Images/Pasted image 20230807165530.png",
+    "Concepts/Images/Pasted image 20230807165516.png",
+    "Concepts/Images/Pasted image 20230807164821.png",
+    "Concepts/Images/Pasted image 20230807164705.png",
+    "Concepts/Images/Pasted image 20230807162127.png",
+    "Concepts/Images/Pasted image 20230807151856.png",
+    "Concepts/Images/Pasted image 20230807144143.png",
+    "Concepts/Scalability.md",
+    "Concepts/Reliability.md",
+    "Concepts/Non-functional System Characteristics.md",
+    "Concepts/Maintainability.md",
+    "Concepts/Images",
+    "Concepts/Fault Tolerance.md",
+    "Concepts/Failures.md",
+    "Concepts/Consistency.md",
+    "Concepts/Concepts.md",
+    "Concepts/CAP Theorem.md",
+    "Concepts/Availability.md",
+    "Concepts/Abstractions.md",
+    "Concepts",
+    "Communication/Remote Procedure Calls.md",
+    "Communication",
+    "Building Blocks.md",
+    "Building Blocks of a System/DNS.md",
+    "Building Blocks of a System/DNS Hierarchy.md",
+    "Building Blocks of a System",
     "Key-Value Store/Key-Value Store.md",
     "Databases/Types of Databases/Non-Relational DB/Non-Relational Databases.md",
-    "Databases/Images/Pasted image 20230805015415.png",
-    "Databases/Images/Pasted image 20230805020541.png",
-    "Databases/Images/Pasted image 20230805023423.png",
-    "Databases/Images/Pasted image 20230805022704.png",
-    "Databases/Images/Pasted image 20230805021244.png",
     "Databases/Databases.md",
     "Versioning Data and Achieving Configurability.md",
     "Key-Value Store/Ensure Scalability and Replication.md",
-    "Key-Value Store/Images/Pasted image 20230805192011.png",
     "Key-Value Store/Images",
-    "Key-Value Store/Images/Pasted image 20230806204146.png",
     "Databases/Data Replication/Replication Models/Single Leader/Single leader or primary-secondary replication.md",
     "Databases/Data Partitioning/Sharding/Horizontal Sharding/Types of Sharding/Consistent Hashing.md",
-    "Key-Value Store/Images/Pasted image 20230806203308.png",
-    "Key-Value Store/Images/Pasted image 20230806203154.png",
     "Key-Value Store/Design a Key-value Store.md",
-    "Key-Value Store/Images/Pasted image 20230806155835.png",
     "Databases/Cost-Benefit analysis/Cost-benefit analysis.md",
     "Key-Value Store",
     "Databases",
-    "Databases/Cost-Benefit analysis/levels of distribution transparency.md",
     "Databases/Cost-Benefit analysis",
-    "Databases/Cost-Benefit analysis/Query optimization and processing speed in a distributed database.md",
-    "Databases/Data Partitioning/Data Partitioning.md",
-    "Databases/Data Partitioning/Sharding/Horizontal Sharding/Horizontal sharding.md",
-    "Databases/Data Partitioning/Sharding/Horizontal Sharding/Types of Sharding/Key-range based sharding.md",
     "Databases/Data Partitioning/Sharding/Horizontal Sharding/Types of Sharding",
-    "Databases/Data Partitioning/Sharding/Horizontal Sharding",
-    "Databases/Data Partitioning/Sharding/Vertical sharding.md",
-    "Databases/Data Partitioning/Sharding",
-    "Databases/Data Partitioning",
-    "Databases/Data Partitioning/Zookeeper.md",
-    "Databases/Data Partitioning/Request Routing.md",
-    "Databases/Data Partitioning/Sharding/Horizontal Sharding/Types of Sharding/Hash based sharding.md",
-    "Databases/Data Replication/Replication Models/Multi-leader replication.md",
-    "Databases/Data Replication/Replication Models/Single Leader/Methods of Implementation/Statement-based replication.md",
-    "Databases/Data Replication/Replication Models/Peer-to-peer or leaderless replication.md",
-    "Data Replication/Quorums.md",
-    "Databases/Data Replication/Data Replication.md",
-    "Databases/Data Replication/Replication Models/Single Leader/Methods of Implementation/Logical (row-based) log replication.md",
-    "Databases/Data Replication/Replication Models/Single Leader/Methods of Implementation/Write-ahead log (WAL) shipping.md",
-    "Databases/Data Replication/Replication Models/Single Leader/Methods of Implementation",
-    "Databases/Data Replication/Replication Models/Single Leader",
-    "Databases/Data Replication/Synchronous replication.md"
+    "Databases/Data Partitioning/Sharding/Horizontal Sharding"
   ]
 }
