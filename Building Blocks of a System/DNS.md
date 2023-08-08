@@ -14,6 +14,10 @@ Computers are uniquely identified by IP addresses. We use IP addresses to visit 
 3. The nearest DNS server returns the IP recursively till reaches the client. And each server in the way, caches the value.
 4. The client requests the IP returned for the webpage.
 
+There are two ways to perform a DNS query ->
+	**Iterative:** The local server requests the root, TLD, and the authoritative servers for the IP address.
+	**Recursive:** The end user requests the local server. The local server further requests the root DNS name servers. The root name servers forward the requests to other name servers.
+![[Pasted image 20230807234431.png]]
 ## Important Details →
 - #Name_servers: DNS isn’t a single server. It’s a complete infrastructure with numerous servers. DNS servers that respond to users’ queries are called **name servers**.
 - #Resource_records: The DNS database stores domain name to IP address mappings in the form of resource records (RR). The RR is the smallest unit of information that users request from the name servers. There are different types of RRs.
@@ -39,7 +43,7 @@ Computers are uniquely identified by IP addresses. We use IP addresses to visit 
 
 ## DNS Routing Algorithms
 ### Weighted round robin 
-a load balancer running on a round robin algorithm won't be able to treat the two servers according to their capacity/ RAM/ CPU. In spite of the two servers' disproportionate capacities, the load balancer will still distribute requests equally. As a result, any Server can get overloaded faster and probably even go down. The Weighted Round Robin is similar to the Round Robin in the sense that the manner by which requests are assigned to the nodes is still cyclical, albeit with a twist. The node with the higher specs will be apportioned a greater number of requests.
+A load balancer running on a round robin algorithm won't be able to treat the two servers according to their capacity/ RAM/ CPU. In spite of the two servers' disproportionate capacities, the load balancer will still distribute requests equally. As a result, any Server can get overloaded faster and probably even go down. The Weighted Round Robin is similar to the Round Robin in the sense that the manner by which requests are assigned to the nodes is still cyclical, albeit with a twist. The node with the higher specs will be apportioned a greater number of requests.
     - Prevent traffic from going to servers under maintenance
     - The balance between varying cluster sizes
     - A/B testing
@@ -47,3 +51,12 @@ a load balancer running on a round robin algorithm won't be able to treat the tw
 Use when you have resources in multiple AWS Regions and you want to route traffic to the Region that provides the best latency. You can use latency routing to create records in a private hosted zone. Latency-based routing is based on latency measurements taken over a period of time, and the measurements reflect these changes. A request that is routed to the Oregon Region this week might be routed to the Singapore Region next week.
 ### Geolocation-based 
 Use when you want to route traffic based on the location of your users. You can use geolocation routing to create records in a private hosted zone.
+
+## DNS as Distributed System
+
+### Highly Scalable
+
+### Reliable
+
+### Consistent
+
