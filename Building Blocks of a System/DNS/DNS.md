@@ -19,6 +19,7 @@ There are two ways to perform a DNS query ->
 	**Recursive:** The end user requests the local server. The local server further requests the root DNS name servers. The root name servers forward the requests to other name servers.
 ![[Pasted image 20230807234431.png]]
 ## Important Details →
+
 - #Name_servers: DNS isn’t a single server. It’s a complete infrastructure with numerous servers. DNS servers that respond to users’ queries are called **name servers**.
 - #Resource_records: The DNS database stores domain name to IP address mappings in the form of resource records (RR). The RR is the smallest unit of information that users request from the name servers. There are different types of RRs.
 ### Resource Records →
@@ -73,3 +74,4 @@ The working labor is divided among TLD and root servers to handle a query and, f
 DNS uses various protocols to update and transfer information among replicated servers in a hierarchy. DNS compromises on strong consistency to achieve high performance because data is read frequently from DNS databases as compared to writing. 
 However, DNS provides eventual consistency and updates records on replicated servers lazily. 
 Consistency can suffer because of caching too. Since authoritative servers are located within the organization, it may be possible that certain resource records are updated on the authoritative servers in case of server failures at the organization. Therefore, cached records at the local and ISP servers may be outdated. To mitigate this issue, each cached record comes with an expiration time called <mark style="background: #D2B3FFA6;">time-to-live (TTL)</mark>.
+

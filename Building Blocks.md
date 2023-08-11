@@ -14,7 +14,7 @@ Some commonly used Building blocks -
 4. **[[Key-Value Store]]**
 	A non-relational database that stores data in the form of a key-value pair.
 	
-5. **[[CDN]] (Content Delivery Network)**
+5. **[[CDN (Content Delivery Network) ]]**
 	Used to keep viral content such as videos, images, audio, and webpages. It efficiently delivers content to end users while reducing latency and burden on the data centers.
 	
 6. **[[Sequencer]]**
