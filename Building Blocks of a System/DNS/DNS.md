@@ -18,7 +18,7 @@ There are two ways to perform a DNS query ->
 	**Iterative:** The local server requests the root, TLD, and the authoritative servers for the IP address.
 	**Recursive:** The end user requests the local server. The local server further requests the root DNS name servers. The root name servers forward the requests to other name servers.
 ![[Pasted image 20230807234431.png]]
-## Important Details →
+## Important Details → 
 - #Name_servers: DNS isn’t a single server. It’s a complete infrastructure with numerous servers. DNS servers that respond to users’ queries are called **name servers**.
 - #Resource_records: The DNS database stores domain name to IP address mappings in the form of resource records (RR). The RR is the smallest unit of information that users request from the name servers. There are different types of RRs.
 ### Resource Records →

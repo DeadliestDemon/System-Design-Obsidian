@@ -9,6 +9,8 @@ Such as storing user sessions in a web application and building NoSQL databases.
 
 Examples of key-value store usage include bestseller lists, shopping carts, customer preferences, session management, sales rank, and product catalogs.
 
+Key-value stores can be used to power real-time recommendations and advertising because the stores can swiftly access and present fresh recommendations.
+
 ![[Pasted image 20230805225435.png]]
 
 ## How will we design a key-value store?
