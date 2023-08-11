@@ -18,7 +18,8 @@ There are two ways to perform a DNS query ->
 	**Iterative:** The local server requests the root, TLD, and the authoritative servers for the IP address.
 	**Recursive:** The end user requests the local server. The local server further requests the root DNS name servers. The root name servers forward the requests to other name servers.
 ![[Pasted image 20230807234431.png]]
-## Important Details → 
+## Important Details →
+
 - #Name_servers: DNS isn’t a single server. It’s a complete infrastructure with numerous servers. DNS servers that respond to users’ queries are called **name servers**.
 - #Resource_records: The DNS database stores domain name to IP address mappings in the form of resource records (RR). The RR is the smallest unit of information that users request from the name servers. There are different types of RRs.
 ### Resource Records →
@@ -53,10 +54,24 @@ Use when you have resources in multiple AWS Regions and you want to route traffi
 Use when you want to route traffic based on the location of your users. You can use geolocation routing to create records in a private hosted zone.
 
 ## DNS as Distributed System
-
+**How?**
+- Avoids becoming a single point of failure (SPOF).
+- Achieves low query latency so users can get responses from nearby servers.
+- Gets a higher degree of flexibility during maintenance and updates or upgrades. For example, if one DNS server is down or overburdened, another DNS server can respond to user queries.
 ### Highly Scalable
+Due to its hierarchical nature, DNS is a highly scalable system. Nearly 1,000 replicated instances of 13 root-level servers are spread throughout the world strategically to handle user queries. 
+
+The working labor is divided among TLD and root servers to handle a query and, finally, the authoritative servers that are managed by the organizations themselves to make the entire system work.
 
 ### Reliable
+1. **Caching:** The caching is done in the browser, the operating system, and the local name server, and the ISP DNS resolvers also maintain a rich cache of frequently visited services.
+2. **Server replication:** DNS has replicated copies of each logical server spread systematically across the globe to entertain user requests at low latency. This redundancy improves the reliability of the overall system.
+3. **Protocol:** Although many clients use DNS over unreliable user datagram protocol (UDP), UDP has its advantages. UDP is much faster and, therefore, improves DNS performance. 
+	Furthermore, Internet service’s reliability has improved since its inception, so UDP is usually favored over TCP. 
+	A DNS resolver can resend the UDP request if it didn’t get a reply to a previous one. This request-response needs just one round trip, which provides a shorter delay as compared to TCP, which needs a three-way handshake before data exchange.
 
 ### Consistent
+DNS uses various protocols to update and transfer information among replicated servers in a hierarchy. DNS compromises on strong consistency to achieve high performance because data is read frequently from DNS databases as compared to writing. 
+However, DNS provides eventual consistency and updates records on replicated servers lazily. 
+Consistency can suffer because of caching too. Since authoritative servers are located within the organization, it may be possible that certain resource records are updated on the authoritative servers in case of server failures at the organization. Therefore, cached records at the local and ISP servers may be outdated. To mitigate this issue, each cached record comes with an expiration time called <mark style="background: #D2B3FFA6;">time-to-live (TTL)</mark>.
 
