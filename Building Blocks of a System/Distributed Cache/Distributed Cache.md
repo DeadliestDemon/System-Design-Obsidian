@@ -79,4 +79,4 @@ Storing data in the cache isn’t as trivial as it seems because the distributed
 A piece of code residing in hosting servers that do (hash) computations to store and retrieve data in the cache servers. Also, cache clients may coordinate with other system components like monitoring and configuration services. All cache clients are programmed in the same way so that the same PUT, and GET operations from different clients return the same results.
 All clients can use well-known transport protocols like TCP or UDP to talk to the cache servers.
 
-### [[HLD of a Distributed Cache]]
+### [[Design of a Distributed Cache]]
