@@ -1,5 +1,5 @@
 ### Local Load Balancer
-Reside within a data center. Behave like a [[reverse proxy]] and make their best effort to divide incoming requests among the pool of available servers. Incoming clients’ requests seamlessly connect to the LB that uses a virtual IP address ( **VIP** )
+Reside within a data center. Behave like a [[Reverse proxy]] and make their best effort to divide incoming requests among the pool of available servers. Incoming clients’ requests seamlessly connect to the LB that uses a virtual IP address ( **VIP** )
 
 ### Need for local load balancers
 DNS plays a vital role in balancing the load, but it suffers from the following limitations:

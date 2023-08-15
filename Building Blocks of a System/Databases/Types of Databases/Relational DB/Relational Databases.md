@@ -19,6 +19,8 @@ The process of aggregating data from multiple sources is a common practice in en
 ### Backup and disaster recovery
 Relational databases guarantee the state of data is consistent at any time. The export and import operations make backup and restoration easier. Most cloud-based relational databases perform continuous mirroring to avoid loss of data and make the restoration process easier and quicker.
 
+### [[Transactions]]
+
 ## Drawback:
 
 ### Impedance mismatch:
