@@ -4,7 +4,8 @@ Improves page load time and can reduce the load on the server and databases. The
 ### What is Cache
 A temporary data storage that can serve data faster by keeping data entries in memory.  Stores only the most frequently accessed data. When a request reaches the serving host, it retrieves data from the cache <mark style="background: #D2B3FFA6;">(cache hit)</mark> and serves the user. However, if the data is unavailable in the cache <mark style="background: #D2B3FFA6;">(cache miss)</mark>, the data will be queried from the database. Also, the cache is populated with the new value to avoid cache misses for the next time.
 
-A nonpersistent storage area used to keep repeatedly read and written data, which provides the end user with lower latency. Therefore, a cache must serve data from a storage component that is fast, has enough storage, and is affordable in terms of dollar cost as we scale the caching service. 
+A non-persistent storage area used to keep repeatedly read and written data, which provides the end user with lower latency. Therefore, a cache must serve data from a storage component that is fast, has enough storage, and is affordable in terms of dollar cost as we scale the caching service. 
+
 ![[Pasted image 20230811222840.png]]
 
 ### What is Distributed Cache?
@@ -42,7 +43,7 @@ When the size of data required in the cache increases, storing the entire data i
 2. **CDN Caching —** CDN === Caching, for faster delivery of web-services  
 3. **Web Server caching —** Web servers can also cache requests, and can serve static and dynamic content directly, without having to contact application servers.
 4. **Database Caching —**  
-5. **Application Caching —** In-memory caches such as Memcached and Redis are key-value stores between your application and your data storage. Since the data is held in RAM, it is much faster than typical databases where data is stored on disk. RAM is more limited than disk, so c*ache invalidation algorithms such as least recently used (LRU) can help invalidate 'cold' entries and keep 'hot' data in RAM.* Generally, you should try to avoid file-based caching, as it makes cloning and auto-scaling more difficult.
+5. **Application Caching —** In-memory caches such as Memcached and Redis are key-value stores between your application and your data storage. Since the data is held in RAM, it is much faster than typical databases where data is stored on disk. RAM is more limited than disk, so *cache invalidation algorithms such as least recently used (LRU) can help invalidate 'cold' entries and keep 'hot' data in RAM.* Generally, you should try to avoid file-based caching, as it makes cloning and auto-scaling more difficult.
     1. **Caching at database query level —** Whenever you query the database, hash the query as a key and store the result in the cache. Issues: Hard to delete a cached result with complex queries, If one piece of data changes such as a table cell, you need to delete all cached queries that might include the changed cell.
     2. **Caching at object level —** Similar to what you do with your application code. Have your application assemble the dataset from the database into a class instance or a data structure(s): Remove the object from the cache if its underlying data has changed; Allows for asynchronous processing: workers assemble objects by consuming the latest cached object
 

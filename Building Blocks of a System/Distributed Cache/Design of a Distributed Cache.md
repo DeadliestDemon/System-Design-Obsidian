@@ -1,8 +1,11 @@
 ### HLD of Distributed Cache
 
+![[Pasted image 20230815205928.png]]
+
 **Functional Requirements ->**
 1. **Insert data:** Insert an entry to the cache.
 2. **Retrieve data:** Retrieve data corresponding to a specific key.
+
 **Non-Functional Requirements ->**
 1. **High performance**: Enable fast retrieval of data. i.e., both the `insert` and `retrieve` operations must be fast.
 2. **Scalability:** It should scale horizontally with no bottlenecks on an increasing number of requests.
